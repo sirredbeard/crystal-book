@@ -16,6 +16,7 @@ Available escape sequences:
 ```crystal
 "\"" # double quote
 "\\" # backslash
+"\a" # alert
 "\b" # backspace
 "\e" # escape
 "\f" # form feed
@@ -31,7 +32,7 @@ Available escape sequences:
 
 Any other character following a backslash is interpreted as the character itself.
 
-A backslash followed by at most three digits denotes a code point written in octal:
+A backslash followed by at most three digits ranging from 0 to 7 denotes a code point written in octal:
 
 ```crystal
 "\101" # => "A"
